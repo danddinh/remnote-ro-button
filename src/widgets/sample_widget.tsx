@@ -1,21 +1,27 @@
 import { usePlugin, renderWidget, useTracker } from '@remnote/plugin-sdk';
 
 export const SampleWidget = () => {
-  const plugin = usePlugin();
+    const plugin = usePlugin();
 
-  let name = useTracker(() => plugin.settings.getSetting<string>('name'));
-  let likesPizza = useTracker(() => plugin.settings.getSetting<boolean>('pizza'));
-  let favoriteNumber = useTracker(() => plugin.settings.getSetting<number>('favorite-number'));
+    // let name = useTracker(() => plugin.settings.getSetting<string>('name'));
+    // let likesPizza = useTracker(() => plugin.settings.getSetting<boolean>('pizza'));
+    // let favoriteNumber = useTracker(() => plugin.settings.getSetting<number>('favorite-number'));
 
-  return (
+    /*return (
     <div className="p-2 m-2 rounded-lg rn-clr-background-light-positive rn-clr-content-positive">
-      <h1 className="text-xl">Sample Plugin</h1>
-      <div>
-        Hi {name}, you {!!likesPizza ? 'do' : "don't"} like pizza and your favorite number is{' '}
-        {favoriteNumber}!
-      </div>
+        <h1 className="text-xl">Sample Plugin</h1>
+        <div>
+            Hi {name}, you {!!likesPizza ? 'do' : "don't"} like pizza and your favorite number is{' '}
+            {favoriteNumber}!
+        </div>
     </div>
-  );
+    );*/
+    return (
+        <div>
+            <a target="_blank" href="https://plugins.remnote.com/advanced/permissions"
+            >requestNative not working, can't change contenteditable attr</a>
+        </div>
+    );
 };
 
 renderWidget(SampleWidget);

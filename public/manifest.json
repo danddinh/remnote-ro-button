@@ -1,18 +1,17 @@
 {
-  "manifestVersion": 1,
-  "id": "plugin_template",
-  "name": "Plugin Template",
-  "author": "remnote",
-  "repoUrl": "",
-  "version": {
-    "major": 0,
-    "minor": 0,
-    "patch": 1
-  },
-  "theme": [],
+  "author": "DanDinh",
+  "name": "Read-only Toggle Button",
+  "description": "Button to enable or disable content editable mode",
+  "repoUrl": "https://github.com/danddinh/remnote-ro-button",
   "enableOnMobile": false,
-  "description": "",
-  "requestNative": false,
+  "id": "DanDinh-0mjsz6p",
+  "manifestVersion": 1,
+  "version": {
+    "major": 1,
+    "minor": 0,
+    "patch": 0
+  },
+  "requestNative": true,
   "requiredScopes": [
     {
       "type": "All",
